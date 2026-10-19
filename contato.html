@@ -1,0 +1,128 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Bernardo Gouveia</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+
+    <div class="theme-wrapper">
+        <button id="theme-toggle" class="btn-theme">✨ Mudar Tema</button>
+    </div>
+
+    <header class="navbar">
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="habilidades.html">Habilidades</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="contato.html" class="active">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contato" class="contato-section scroll-anim">
+            <div class="contato-box">
+                <h2 class="contato-header">Me Chama aí!</h2>
+
+                <form id="formContato" novalidate>
+
+                    <div class="input-block">
+                        <input type="text" id="nome" required placeholder=" ">
+                        <label for="nome">Seu Nome</label>
+                    </div>
+
+                    <div class="input-row">
+
+                        <div class="input-block">
+                            <input
+                                type="text"
+                                id="telefone"
+                                maxlength="15"
+                                required
+                                placeholder=" "
+                            >
+                            <label for="telefone">Telefone</label>
+                        </div>
+
+                        <div class="input-block">
+                            <input
+                                type="email"
+                                id="email"
+                                required
+                                placeholder=" "
+                            >
+                            <label for="email">E-mail</label>
+                        </div>
+
+                    </div>
+
+                    <div class="input-block">
+                        <textarea
+                            id="mensagem"
+                            required
+                            placeholder=" "
+                        ></textarea>
+
+                        <label for="mensagem">Sua Mensagem</label>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        Enviar Proposta
+                    </button>
+
+                </form>
+
+                <div class="contato-links">
+
+                    <a
+                        href="mailto:bernardo.gouveia.crisostomo2010@gmail.com"
+                        class="link-item"
+                    >
+                        📧 bernardo.gouveia.crisostomo2010@gmail.com
+                    </a>
+
+                    <a
+                        href="https://instagram.com/begouveia_"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="link-item"
+                    >
+                        📸 @begouveia_
+                    </a>
+
+                    <a
+                        href="https://github.com/Bernardo7510"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="github-btn"
+                    >
+                        🐙 GitHub: Repositório do Projeto
+                    </a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="customModal" class="modal-overlay">
+        <div class="modal-window">
+            <button class="close-btn" id="closeModal">&times;</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>
+            Contato: bernardo.gouveia.crisostomo2010@gmail.com |
+            © 2026 Bernardo Gouveia
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
